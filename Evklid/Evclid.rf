@@ -9,5 +9,5 @@ fn main(){
           b = b%a
         }
    }
-    print!("NOD {}",a);
+    print!("NOD {}\n",a);
 }

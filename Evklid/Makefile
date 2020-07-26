@@ -1,5 +1,7 @@
 build:
-	gcc -o2  Evclid.c -o Evklid
+	gcc -o2  Evclid.c -o EvklidClanguage
+	rustc Evclid.rf  -o EvclidRust
+
 CLanguageRun:
 	./Evklid
 GoRun:
@@ -8,3 +10,5 @@ LuaRun:
 	lua5.3 Evclid.lua
 PyRun:
 	python3 Evklid.py
+RustRun:
+	./EvclidRust
