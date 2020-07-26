@@ -1,0 +1,13 @@
+fn main(){
+   let mut a = 1234567890;
+   let mut b = 12;
+   while a!=0 && b!=0 {
+        if a > b{
+          a = a%b
+        }
+        else{
+          b = b%a
+        }
+   }
+    print!("NOD {}",a);
+}
