@@ -10,6 +10,6 @@ public class Evclid {
           b = b%a ;
         }
       }
-      System.out.println("NOK : " + a);
+      System.out.println("NOD : " + a);
    }
 }
