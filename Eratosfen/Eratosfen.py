@@ -1,18 +1,12 @@
-n = int(4096)
+def eratosthenes(n):
+    sieve = list(range(n + 1))
+    sieve[1] = 0
+    for i in sieve:
+        if i > 1:
+            for j in range(i + i, len(sieve), i):
+                sieve[j] = 0
+    sieve1 = [x for x in sieve if sieve[x] != 0]
+    return sieve1
 
-a = []
-for i in range(n + 1):
-    a.append(i)
-a[1] = 0
-i = 2
-while i <= n:
-    if a[i] != 0:
-        j = i + i
-        while j <= n:
-            a[j] = 0
-            j = j + i
-    i += 1
 
-a = set(a)
-a.remove(0)
-print(a)
+print(eratosthenes(4096))
