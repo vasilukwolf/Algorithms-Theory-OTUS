@@ -3,3 +3,7 @@ build:
 
 CLanguageRun:
 	./Fibonachi
+PyRun:
+	python3 Fibonachi.py
+JavaRun:
+	java Fibonachi.java
