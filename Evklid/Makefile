@@ -1,14 +1,17 @@
-build:
+EvclidClang:
 	gcc -o2  Evclid.c -o EvklidClanguage
+EvclidRust:
 	rustc Evclid.rf  -o EvclidRust
 
-CLanguageRun:
-	./Evklid
-GoRun:
+run-gcc: EvclidClang
+	./EvklidClanguage
+run-golang:
 	go run Evclid.go
-LuaRun:
+run-lua:
 	lua5.3 Evclid.lua
-PyRun:
-	python3 Evklid.py
-RustRun:
+run-rust:EvclidRust
 	./EvclidRust
+run-java:
+	java Evclid.java
+run-python3:
+	python3 Evclid.py

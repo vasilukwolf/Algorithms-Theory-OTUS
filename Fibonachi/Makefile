@@ -1,9 +1,9 @@
-build:
+FibonachiC:
 	gcc -o2  Fibonachi.c -o Fibonachi
 
-CLanguageRun:
+run-gcc: FibonachiC
 	./Fibonachi
-PyRun:
-	python3 Fibonachi.py
-JavaRun:
+run-java:
 	java Fibonachi.java
+run-python3:
+	python3 Fibonachi.py

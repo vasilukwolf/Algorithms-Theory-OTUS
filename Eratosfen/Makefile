@@ -1,10 +1,14 @@
-build:
-	gcc -o2  Erastofen.c -o EvklidClanguage
-	g++  Erastofen.cpp -o EvklidCpp
+ErastofenCpp:
+	g++  Erastofen.cpp -o ErastofenCpp
 
-CLanguageRun:
-	./EvklidClanguage
-CppLanguageRun:
-	./EvklidCpp
-PyRun:
-	python3 Evklid.py
+ErastofenClanguage:
+	gcc -o2 Erastofen.c -o ErastofenClanguage
+
+run-gcc: ErastofenClanguage
+	./ErastofenClanguage
+
+run-cpp: ErastofenCpp
+	./ErastofenClanguage
+
+run-python3:
+	python3 Eratosfen.py
