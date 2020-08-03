@@ -1,7 +1,11 @@
-def fibonacci(n):
-    if n in (1, 2):
-        return 1
-    return fibonacci(n - 1) + fibonacci(n - 2)
+def fibonaci(n):
+    a = 0
+    b = 1
+    for __ in range(n):
+        a, b = b, a + b
+    return a
 
 
-print(fibonacci(10))
+print(fibonaci(0))
+print(fibonaci(1))
+print(fibonaci(2))
