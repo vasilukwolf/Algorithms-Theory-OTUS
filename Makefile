@@ -1,9 +1,9 @@
-JAVA_RUNEBLE ?= Fibonachi Evklid
-PYTHON_RUNEBLE ?= Fibonachi Evklid Eratosfen
-LUA_RUNEBLE ?= Evklid
-C_LANG_RUNEBLE ?= Fibonachi Evklid Eratosfen
-CPP_RUNEBLE ?= Eratosfen
-GO_RUNEBLE ?= Evklid
+JAVA_RUNEBLE ?= BasicAlgorithms/Fibonachi BasicAlgorithms/Evklid SortAlgorithms/bubleSort
+PYTHON_RUNEBLE ?= BasicAlgorithms/Fibonachi BasicAlgorithms/Evklid BasicAlgorithms/Eratosfen SortAlgorithms/bubleSort
+LUA_RUNEBLE ?= BasicAlgorithms/Evklid SortAlgorithms/bubleSort
+C_LANG_RUNEBLE ?= BasicAlgorithms/Fibonachi BasicAlgorithms/Evklid BasicAlgorithms/Eratosfen SortAlgorithms/bubleSort
+CPP_RUNEBLE ?= BasicAlgorithms/Eratosfen SortAlgorithms/bubleSort
+GO_RUNEBLE ?= BasicAlgorithms/Evklid SortAlgorithms/bubleSort
 
 
 run-java:
